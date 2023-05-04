@@ -8,9 +8,7 @@ spec:
   - host: prometheus.com
     http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
+        - backend:
            serviceName: prometheus-service
            servicePort: 8080
 
